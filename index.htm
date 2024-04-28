@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flower Design</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://	fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script defer type="text/javascript" src="js/main.js"></script>
+	<script defer type="text/javascript" src="js/bascet.js"></script>
+	<script defer type="text/javascript" src="js/search.js"></script>
+	
+</head>
+<body>
+	<header>
+		<button id="burger" class="burger">
+	        <span></span>
+	    </button>
+	    <img class="logo" src="images/logo.png">
+		<nav id="nav" class="nav-links">
+			<ul >
+				<li><a class="nav-item" href="#catalog">Каталог</a></li>
+				<li><a class="nav-item" href="#about">Про нас</a></li>
+				<li><a class="nav-item" href="#bouquet">Збери букет</a></li>
+				<li><a class="nav-item" href="#contact">Контакти</a></li>
+			</ul>
+		</nav>
+		<section class="nav-icons">
+			<section class="search">
+				<img  src="images/lupa.png" >
+				<input type="text" name="searchText">
+			</section>
+			<section id="basket" class="basket-outer">
+				<section class='basket-counter' id='basket-counter'></section>
+				<img  src="images/basket.png">
+			</section>
+		</section>
+	</header>
+	<section class="content-all">
+		<main>
+			<section  class="top-flower padding-left">
+				<img src="images/bg_web-no-background.png">
+				<section id="top-flower" class="top-content">
+					<h1 class="section-title">Букет із кущових троянд </br>"Довгоочікуване щастя"</h1>
+					<p class="section-content">Ніжний та витончений шик у букеті з троянд - гарний вибір для коханої </br> людини</p>
+					<section class="outer-button">
+						<button class="button-fill">В кошик</button>
+						<button class="button-border"><a href="#catalog">В каталог</a></button>
+					</section>
+				</section>
+			</section>
+			<section id="about" class="about padding-left">
+				<section class="about-img-container ">
+					<div class="about-img-item bouquets">
+						<button class="button-rect">Букети</button>
+					</div>
+					<div class="about-img-item natural_flowers">
+						<button class="button-rect">Живі квіти</button>
+					</div>
+					<div class="about-img-item own_bouquet">
+						<button class="button-rect">Свій букет</button>
+					</div>
+				</section>
+				<section class="about-content-outer">
+					<section class="about-content">
+						<h1 class="section-title">Про нас</h1>
+						<p class="section-content">Яких квітів тут лише немає! І садові, і польові, і кімнатні у глиняних горщиках. Очі розбігаються від такого достатку.</p>
+						<p class="section-content">Тут представлена і багата колекція кімнатних рослин: кактуси різної форми та величини, ніжні фіалки, усипані квітами, аспарагуси, фікуси.</p>
+					</section>
+					<section class="abstract_background">
+						<section class="women"></section>
+						<section class="social">
+							<section class="inst"></section>
+							<section class="facebook"></section>
+							<section class="viber"></section>
+						</section>
+					</section>
+				</section>
+				
+			</section>
+			<section id="bouquet" class="work-for-you">
+				<h2 class="padding-left">Працюємо для вас</h2>
+				<section class="work-for-you-list">
+					<section class="work-for-you-item">
+						<img src="images/constructor.png">
+						<p class="section-content">Конструктор унікального букета</p>
+					</section>
+					<section class="work-for-you-item">
+						<img src="images/delivery.png">
+						<p class="section-content">Безкоштовна доставка по місту до&nbsp;2-х&nbsp;годин</p>
+					</section>
+					<section class="work-for-you-item">
+						<img src="images/indoor.png">
+						<p class="section-content">Наявність кімнатних </br>рослин</p>
+					</section>
+					<section class="work-for-you-item">
+						<img src="images/for_loved_ones2.png">
+						<p class="section-content">Вибір квітів для коханих, мам та&nbsp;друзів</p>
+					</section>
+				</section>
+			</section>
+			<section id="catalog" class="catalog padding-left">
+				<h1 class="section-title">Каталог</h1>
+				<section class="catalog-container" id="flowerGallery"></section>
+				<section id="catalog-nav" class="catalog-nav">
+					<img id="prevBtn" class="prevBtn" src="images/ArrowPrevFalse.png">
+					<ul id="catalog-ul">
+					</ul>
+					<img id="nextBtn" class="nextBtn" src="images/ArrowNext.png">
+				</section>		
+			</section>
+			<section  class="coments">
+				<h1 class="section-title ">Відгуки</h1>
+				<div class="flowers1"></div>
+				<div class="flowers2"></div>
+				<section id="comentsGallery"></section>
+				<section id="coments-nav" class="catalog-nav">
+					<img id="prevBtnCom" class="prevBtn" src="images/ArrowPrevFalse.png">
+					<ul id="coments-ul"></ul>
+					<img id="nextBtnCom" class="nextBtn" src="images/ArrowNext.png">
+				</section>
+				<form class="" action="https://jsonplaceholder.typicode.com/comments" method="post" id="coments">
+					<h1 class="section-title ">Додати відгук:</h1>
+					<input class="input-1str" type="text" name="name" placeholder="Ваше ім’я" autocomplete="given-name" required>
+					<textarea name="body" rows="6" placeholder="Ваш відгук" required></textarea>
+					<button type="submit" class="button-fill" name="submit">Відправити</button>
+				</form>
+			</section>
+			<section id="pay" class="pay padding-left">
+				<h1 class="section-title ">Доставка і оплата</h1>
+				<section class="pay-outer">
+					<section class="pay-item">
+						<section class="pay-disc">1</section><br>
+						<p class="section-content">Ви замовляєте букет через каталог</p>
+					</section>
+					<section class="pay-item">
+						<section class="pay-disc">2</section><br>
+						<p class="section-content">Ви оплачуєте товар через картку VISA або МС, або Приват24</p>
+					</section>
+					<section class="pay-item">
+						<section class="pay-disc">3</section><br>
+						<p class="section-content">Вам передзвонять наші менеджери, якщо потрібно щось уточнити</p>
+					</section>
+					<section class="pay-item">
+						<section class="pay-disc">4</section><br>
+						<p class="section-content">Надсилаємо фото зібраного букета, щоб узгодити все</p>
+					</section>
+					<section class="pay-item">
+						<section class="pay-disc">5</section><br>
+						<p class="section-content">Доставляємо букет одержувачу протягом 2-х годин</p>
+					</section>
+					<section class="pay-item">
+						<section class="pay-disc">6</section><br>
+						<p class="section-content">Сповістимо Вас дзвінком або повідомленням про доставку букета</p>
+					</section>
+				</section>
+				
+			</section>
+		</main>
+		<footer>
+			<div class="flowers3"></div>
+			<img class="logo" src="images/logo.png">
+			<section class="footer-container">
+				<section class="footer-outer">
+					<section class="footer-item">
+						<h1 id="contact" class="footer-title">Контакти</h1>
+						<ul class="footer-content">
+							<li>(095) 000 00 00</li>
+							<li>(098) 000 00 00</li>
+							<li>Ми працюємо цілодобово</li>
+						</ul>
+					</section>
+					<section class="footer-item">
+						<h1 class="footer-title">Інформація</h1>
+						<ul class="footer-content">
+							<li><a href="#about">Про нас</a></li>
+							<li><a href="#top-flower">Хіт продажу</a></li>
+							<li><a href="#reviews">Відгуки</a></li>
+							<li><a href="#pay">Доставка і оплата</a></li>
+						</ul>	
+					</section>
+					<section class="footer-item">
+						<h1 class="footer-title">Каталог</h1>
+						<ul class="footer-content">
+							<li><a href="#bouquet">Збери свій букет</a></li>
+							<li><a href="#catalog"> Живі квіти</a></li>
+							<li><a href="#bouquet">Кімнатні рослини</a></li>
+						</ul>				
+					</section>
+					<section class="footer-item">
+						<input class="input-1str" type="email" name="useremail" placeholder="Введіть свій e-mail">
+						<button class="button-fill" name="subscription">Підписатися</button>
+						<section class="social">
+							<section class="inst"></section>
+							<section class="facebook"></section>
+							<section class="viber"></section>
+						</section>
+					</section>
+				</section>
+				<p class="footer-content copyright">Copyright @ 2024</p>
+			</section>
+		</footer>
+  	</section>
+  	<section id="cart-search" class="modal">
+		    <div class="modal-content">
+		        <span class="close" onclick="searchClose()">&times;</span>
+		        <h1 class="section-title">Результат пошуку:</h1>
+		        <div id="cart-container-search" class="catalog-container">
+		        </div>
+		        <!-- <h2 id="total" class="section-content"></h2>
+		        <button id="pay-button" onclick="sendOrder()" class="button-fill">Замовити</button> -->
+		    </div>
+	</section>
+
+	<section id="cart-modal" class="modal">
+		    <div class="modal-content">
+		        <span class="close" onclick="toggleModal()">&times;</span>
+		        <h1 class="section-title">Кошик порожній</h1>
+		        <div id="cart-container" class="catalog-container">
+		        </div>
+		        <h2 id="total" class="section-content"></h2>
+		        <button id="pay-button" onclick="sendOrder()" class="button-fill">Замовити</button>
+		    </div>
+	</section>
+</body>
+</html>
+
