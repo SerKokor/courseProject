@@ -4,9 +4,7 @@ const storedData = localStorage.getItem('cartPay');
 let cartPay = storedData ? JSON.parse(storedData) : [];
 const storedDataLast = localStorage.getItem('cartOrderLast');
 let cartOrderLast = storedDataLast ? JSON.parse(storedDataLast) : [];
-console.log(storedData);
-console.log(cartPay);
-console.log(cartOrderLast);
+
 
 
 // якщо дані з сервера зчитано
@@ -30,7 +28,6 @@ function startInit () {
         const payButton =  document.querySelector('#cart-modal .modal-content .button-fill'); 
         payButton.classList.toggle('open');
         updateCartUI(cartPay);
-        console.log('startInit');
     } else {
         lastOrderView();
     }
