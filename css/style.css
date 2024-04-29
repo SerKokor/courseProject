@@ -120,6 +120,10 @@ header {
 	min-height: 70px;
 	padding: 8px var(--padding-left-standart);
 }
+header a {
+	display: flex;
+	text-decoration-line: none;	
+}
 .burger {
     display: none;
 }
@@ -157,6 +161,7 @@ a.nav-item:hover {
 }
 .nav-icons {
 	display: flex;
+	flex: 0 0 auto;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -853,7 +858,8 @@ p.footer-content {
 		padding: 8px 0;
 	}
     .burger {
-		position: relative;
+	    flex: 0 0 32px;
+	    position: relative;
 	    display: block;
 	    width: 32px;
 	    height: 32px;
