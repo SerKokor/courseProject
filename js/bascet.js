@@ -117,7 +117,7 @@ function updateCartUI(cartArr) {
 
     cartContainer.innerHTML = '';
     cartArr.forEach( (item) => {
-        createCatalogItem(item, cartContainer)
+        createCatalogItem(item, cartContainer, true);
     });
 
     if (cartArr.length === 0) { 
