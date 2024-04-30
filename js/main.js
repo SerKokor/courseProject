@@ -69,12 +69,12 @@ function addBlockToContainer(data, containerId, index, countElementInGroup) {
 }
 
 // *****  create  slider items  *************
-function createCatalogItem(item, container) {
-	const flowerDiv = newFlowers(item);
+function createCatalogItem(item, container, showClose) {
+	const flowerDiv = newFlowers(item, showClose);
 	container.appendChild(flowerDiv);
 }
 
-function newFlowers(item) {
+function newFlowers(item, showClose) {
 	const flower = document.createElement('section');
 	flower.className = 'catalog-item';
     const img = document.createElement('img');
@@ -91,11 +91,13 @@ function newFlowers(item) {
 		const elemInBasket = cartPay.some( (obj) => obj.id === item.id);
 		if (elemInBasket) {
 				(inBasket.className = 'button-border in-basket', inBasket.textContent = 'Обрано');
-				let delItem = document.createElement('span');
-				delItem.className = 'close';
-				delItem.innerHTML = '&times;';
-				delItem.dataset.productId = item.id; 
-				flower.appendChild(delItem);
+				if (showClose) {
+					let delItem = document.createElement('span');
+					delItem.className = 'close';
+					delItem.innerHTML = '&times;';
+					delItem.dataset.productId = item.id; 
+					flower.appendChild(delItem);
+				}
 		} else {
 				(inBasket.className = 'button-border', inBasket.textContent = 'В кошик');
 		}
