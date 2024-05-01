@@ -1099,6 +1099,7 @@ p.footer-content {
 		border: none;
 		border-radius: 5px;
 		padding-left: 6px;
-	
-
-}
+	}
+	.modal .button-border {
+		flex: 0 0 68px;
+	}
